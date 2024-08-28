@@ -1,0 +1,489 @@
+html {
+  font-size: 2.2vw;
+  @include media-breakpoint-up(lg) {
+    font-size: 1vw;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .container { // увеличиваем отступы на маленьких экранах
+    padding-right: var(--si-gutter-x);
+    padding-left: var(--si-gutter-x);
+  }
+}
+@include media-breakpoint-up(lg) {
+  .navbar.position-absolute { // увеличиваем отступы на больших экранах
+    top: .4rem;
+  }
+}
+.dark-mode .card-hover:hover {
+  --si-card-border-color: transparent;
+}
+.text-to-left-side .js-marquee {
+  position: relative;
+}
+
+.navbar-brand{
+  width: 45px;
+  @include media-breakpoint-up(sm){
+    width: 50px;
+  }
+  @include media-breakpoint-up(md){
+    width: 60px;
+  }
+  @include media-breakpoint-up(xl){
+    width: 70px;
+  }
+}
+
+// hero
+.canvas {
+  transform-origin: 50% 50%;
+  animation: stretching 24s ease-in-out infinite;
+}
+
+.fs-envelope-icon{
+  font-size: .8rem;
+  @include media-breakpoint-up(sm){
+    font-size: .8rem;
+  }
+}
+
+.fs-phone-icon{
+  font-size: .8rem;
+  @include media-breakpoint-up(sm){
+    font-size: .8rem;
+  }
+}
+
+.fs-contacts-icon{
+  font-size: 2.4rem;
+  @include media-breakpoint-up(sm){
+    font-size: 2.4rem;
+  }
+}
+
+.card-hover {
+  border: none;
+}
+
+.main-title {
+  color: $light;
+  font-weight: $font-weight-medium;
+  font-size: 3rem;
+  @include media-breakpoint-up(350){
+    font-size: 2.8rem;
+  }
+  @include media-breakpoint-up(400){
+    font-size: 3.25rem;
+  }
+  @include media-breakpoint-up(sm){
+    font-size: 3.8rem;
+  }
+  @include media-breakpoint-up(530){
+    font-size: 4.5rem;
+  }
+  @include media-breakpoint-up(md){
+    font-size: 5.5rem;
+  }
+  @include media-breakpoint-up(lg){
+    font-size: 8rem;
+  }
+  @include media-breakpoint-up(xl){
+    font-size: 9rem;
+  }
+  @include media-breakpoint-up(xxl){
+    font-size: 11rem;
+  }
+}
+
+.gallery-item img {
+  object-fit: cover;
+}
+
+.vertical-lines {
+  &:before {
+    background: rgb(60,60,60);
+    background: linear-gradient(0deg, rgba(60,60,60,0) 0%, rgba(60,60,60,1) 20%, rgba(60,60,60,1) 80%, rgba(60,60,60,0) 100%);
+    content: "";
+    height: 100vh;
+    width: 1px;
+    position: absolute;
+    top: -30vh;
+    z-index: 999;
+  }
+  &_multiply:before {
+    mix-blend-mode: multiply;
+  }
+}
+.horizontal-lines {
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+  }
+  &-left:before {
+    left: 0;
+    margin-left: calc(-50% - 200px);
+    @include media-breakpoint-down(md) {
+      margin-left: -90%;
+    }
+  }
+  &-right:before {
+    right:  0;
+    margin-right: calc(-50% - 200px);
+    @include media-breakpoint-down(md) {
+      margin-right: -90%;
+    }
+  }
+
+}
+
+.stars:before {
+  background-image: url('../img/custom_img/stars.png');
+  content: "";
+  width: 100%;
+  height: 165px;
+  left: -3%;
+  top: -20%;
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.square {
+  width: 200px;
+  height: 200px;
+  @include media-breakpoint-down(xl) {
+    width: 172px;
+    height: 172px;
+  }
+  & h5 {
+    bottom: -10%;
+    left: -3%;
+    font-size: 12rem;
+    @include media-breakpoint-down(xl) {
+      font-size: 10rem;
+    }
+  }
+  &-1 {
+    width: 220px;
+    height: 220px;
+    & h5 {
+      font-size: 8rem;
+      left: -1%;
+      top: -19%;
+      @include media-breakpoint-up(xl) {
+        left: -1%;
+        top: -15%;
+      }
+    }
+  }
+}
+
+.fs-text-number{
+  font-size: 3rem;
+  @include media-breakpoint-up(sm) {
+    font-size: 6rem;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 9rem;
+  }
+}
+
+.numbers {
+  grid-template-areas:
+    "students students quantity"
+    "scientists scientists quantity";
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 3fr 3fr 2fr;
+  @include media-breakpoint-down(xxl) {
+    grid-template-columns: 3fr 5fr 2fr;
+  }
+  &-students {
+    grid-area: students;
+    & h5 {
+      font-size: 20rem;
+      color: rgb(119 119 204 / 20%);
+      @include media-breakpoint-down(xl) {
+        font-size: 12rem;
+      }
+      @include media-breakpoint-down(md) {
+        font-size: 6.5rem;
+      }
+      &:before {
+        content: "более";
+        color: #fff;
+        position: absolute;
+        left: 0px;
+        top: 22%;
+        font-size: 4rem;
+        font-weight: 400;
+        mix-blend-mode: multiply;
+        @include media-breakpoint-down(xl) {
+          top: -10%;
+        }
+      }
+    }
+  }
+  &-quantity {
+    grid-area: quantity;
+  }
+  &-scientists {
+    grid-area: scientists;
+    & .text-teachers h2 {
+      @include media-breakpoint-down(xxl) {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  &-plan {
+    &:after {
+      background-image: url('../img/custom_img/astronaut.png');
+      content: "";
+      width: 150px;
+      height: 165px;
+      position: absolute;
+      background-repeat: no-repeat;
+      right: 0px;
+      top: 100%;
+      background-size: contain;
+      @include media-breakpoint-down(lg) {
+        right: 3rem;
+        top: 50%;
+      }
+      @include media-breakpoint-down(sm) {
+        right: 1rem;
+      }
+    }
+  }
+}
+
+.swiper-steps {
+  overflow: visible;
+  @include media-breakpoint-down(md) {
+    overflow: hidden;
+  }
+  .swiper-wrapper .swiper-slide:not(:last-child) .step::after {
+    background-color: #ffffff!important;
+  }
+  .swiper-wrapper .swiper-slide {
+    width: 25%;
+    &:nth-child(4n):not(:last-child) {
+      width: 65%;
+    }
+    @include media-breakpoint-down(xl) {
+      width: 50%;
+      &:nth-child(4n):not(:last-child) {
+        width: 50%;
+      }
+      &:nth-child(2n):not(:last-child) {
+        width: 65%;
+      }
+    }
+    @include media-breakpoint-down(md) {
+      width: calc(100% + var(--si-gutter-x));
+    }
+  }
+  .steps-horizontal-md {
+    @include media-breakpoint-down(xl) {
+      height: 100%;
+      align-items: start;
+      justify-content: center;
+    }
+    @include media-breakpoint-down(sm) {
+      height: auto;
+      align-items: start;
+      justify-content: start;
+    }
+  }
+  .steps-horizontal-md .step::after {
+    left: calc(var(--si-steps-number-size) * 1.2);
+    width: calc(100% - var(--si-steps-number-size) * 2);
+    height: 1px;
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+}
+.steps-horizontal-lg .step::after,
+.steps-horizontal-lg .step::before {
+  content: none;
+}
+
+
+.animation-hover{
+  transition: all .5s;
+  &:hover {
+    transform: translateY(-.25rem);
+  }
+}
+
+.swiper-reels {
+  .card-hover {
+    transition: $card-transition;
+    &:hover {
+      transform: translateY(-.25rem);
+    }
+  }
+  .fa-circle-arrow-right {
+    margin-bottom: 2px;
+  }
+  .fw-light {
+    line-height: 1.7;
+  }
+}
+
+// navigation start
+.swiper-nav {
+  .navigation {
+    line-height: 2.2;
+    transition: 0.6s;
+    &-prev {
+      margin-left: 1px;
+    }
+    & i::before {
+      transition: 0.6s;
+    }
+    &:not(.swiper-button-disabled) {
+      i {
+        color: var(--si-white);
+        &:hover {
+          &::before {
+            color: var(--si-primary);
+          }
+        }
+      }
+    }
+  }
+  .swiper-button-disabled {
+    cursor: default;
+  }
+}
+// navigation end
+
+// swiper-possibility-btn start
+.swiper-steps-mobile .swiper-slide-active,
+.swiper-slide.active {
+  .btn-white-link {
+    cursor: default;
+    color: #fff;
+  }
+}
+.btn-white-link {
+  color: #474747;
+  &.active {
+    cursor: default;
+    color: #fff;
+  }
+  &:hover {
+    --si-btn-hover-color: #474747;
+  }
+  @include media-breakpoint-up(lg) {
+    &:hover {
+      --si-btn-hover-color: #fff;
+    }
+  }
+
+}
+// swiper-possibility-btn end
+
+// infinity start
+.planet-left {
+  width: 60vw;
+  top: -90vw;
+  max-width: 1100px;
+
+  @include media-breakpoint-up(md) {
+    width: 70vw;
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: 50vw;
+    top: -55vw;
+  }
+}
+.infinity {
+  @include media-breakpoint-down(sm) {
+    .fs-xl {
+      font-size: 1rem!important;
+    }
+  }
+  .bg::before {
+    background-image: url('../img/become-engineering/bg-bigEllipse.png');
+    content: "";
+    width: 150%;
+    min-height: 100vh;
+    height: 100%;
+    left: -25%;
+    top: 0;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    @include media-breakpoint-down(lg) {
+      width: 170%;
+      left: -35%;
+    }
+    @include media-breakpoint-down(md) {
+      width: 260%;
+      left: -80%;
+    }
+  }
+  .marquee span {
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Oswald';
+    font-size: 15rem;
+    line-height: 1.3;
+    @include media-breakpoint-down(xxl) {
+      font-size: calc(5rem + 8vw);
+    }
+  }
+}
+// infinity end
+
+@include media-breakpoint-down(sm) {
+  footer {
+    .h4 {
+      font-size: 1rem;
+    }
+  }
+}
+
+// swiper grid start
+@include media-breakpoint-down(md) {
+  .swiper-grid {
+    .swiper-wrapper {
+      flex-direction: column;
+      height: calc(122px * 2);
+    }
+    .swiper-slide {
+      height: calc(100% / 2);
+      margin-top: 0!important;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .swiper-grid.grid-md {
+    .swiper-wrapper {
+      height: calc(80px * 2);
+    }
+  }
+}
+
+.rounded-bottom-left{
+  border-bottom-left-radius: 1rem;
+}
+.rounded-bottom-right{
+  border-bottom-right-radius: 1rem;
+}
+
+.border-decor{
+  border: solid #fff .2px;
+  @include media-breakpoint-up(md) {
+    border: solid #fff 1px;
+  }
+}

@@ -1,0 +1,50 @@
+:root{
+    --form-section-bg-color: #2c2c2c;
+    --form-field-bg-color: #1c1c1c;
+    --form-field-border-color: #131313;
+    --form-field-text-color: #fff;
+    --form-field-bg-danger-color: #442727;
+}
+
+.mai-form__input textarea,
+.mai-form__input input
+{
+    width: 100%;
+}
+
+textarea:focus, textarea:active, input:focus, input:active, select:focus, select:active, button:focus, button:active {
+    outline: none !important;
+}
+
+.mai-form input[type=text], .mai-form select, .mai-form textarea {
+    display: block;
+    width: 100%;
+    padding: 1.0625rem .875rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    color: var(--form-field-text-color);
+    background-color: var(--form-field-bg-color);
+    background-clip: padding-box;
+    border: 1px solid var(--form-field-border-color);
+    border-radius: .1875rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+font.errortext {
+    color: red;
+}
+
+font.errortext {
+    display: block;
+    background-color: var(--form-field-bg-danger-color);
+    padding: 20px;
+    border-radius: 3px;
+}
+
+.mai-form__input-group{
+  position: relative;
+  @include media-breakpoint-up(lg) {
+    position: absolute;
+    right: 5rem;
+  }
+}

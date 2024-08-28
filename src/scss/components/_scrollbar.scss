@@ -1,0 +1,18 @@
+html:not(.lg-on) > body {
+  overflow: overlay;
+}
+::-webkit-scrollbar {
+  cursor: grab !important;
+  width: 20px;
+  background-color: transparent;
+}
+::-webkit-scrollbar {
+  cursor: grab !important;
+}
+::-webkit-scrollbar-thumb {
+  cursor: grab !important;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  border: 6px solid rgba(255, 255, 255, 0);
+  background-clip: padding-box;
+}

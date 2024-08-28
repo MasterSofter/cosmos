@@ -1,0 +1,6 @@
+.hero-text-subtitle {
+  color: #000000 !important;
+  @include media-breakpoint-up(lg) {
+    color: #ffffff !important;
+  }
+}

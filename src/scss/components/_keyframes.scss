@@ -1,0 +1,21 @@
+@keyframes text-from-mask-half {
+  0%   { mask-size: 0%   }
+  50%  { mask-size: 100% }
+  100% { mask-size: 51%  }
+}
+@keyframes text-from-mask-full {
+  0%   { mask-size: 0%   }
+  100% { mask-size: 100% }
+}
+@keyframes pulse {
+  0%   { transform: scale(.90) }
+  50%  { transform: scale(1) }
+  100% { transform: scale(.90) }
+}
+@keyframes stretching {
+  0%   { transform: scale(1) }
+  25%  { transform: scale(1, 1.05) }
+  50%  { transform: scale(1.05, 0.95) }
+  75%  { transform: scale(1.05, 1) }
+  100% { transform: scale(1) }
+}

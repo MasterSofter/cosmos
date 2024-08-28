@@ -1,0 +1,33 @@
+.hero-fs-1 {
+  font-size: 5.5rem !important;
+  line-height: .9 !important;
+  @include media-breakpoint-up(lg) {
+    font-size: 7.3rem !important;
+    line-height: .85 !important;
+  }
+}
+
+.hero-fs-2{
+  font-size: 2.2rem !important;
+  line-height: 1 !important;
+  @include media-breakpoint-up(lg) {
+    font-size: 2.45rem !important;
+    line-height: .95 !important;
+  }
+}
+
+.hero-fs-3 {
+  font-size: 1.4rem !important;
+  line-height: 1.25 !important;
+  @include media-breakpoint-up(lg) {
+    font-size: 1.55rem !important;
+    line-height: 1.25 !important;
+  }
+}
+
+.hero-fs-btn{
+  font-size: 2.55rem !important;
+  @include media-breakpoint-up(lg) {
+    font-size: 1.55rem !important;
+  }
+}

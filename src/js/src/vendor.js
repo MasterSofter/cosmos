@@ -1,0 +1,11 @@
+import "bootstrap/dist/js/bootstrap.bundle";
+import "../../../node_modules/jquery/dist/jquery.min";
+import "../../../node_modules/parallax-js/dist/parallax.min";
+import "../../../node_modules/jarallax/dist/jarallax.min";
+import "../../../node_modules/lightgallery/lightgallery.min"
+import "../../../node_modules/lightgallery/plugins/fullscreen/lg-fullscreen.min";
+import "../../../node_modules/lightgallery/plugins/zoom/lg-zoom.min";
+import "../../../node_modules/lightgallery/plugins/video/lg-video.min";
+import "../../../node_modules/lightgallery/plugins/thumbnail/lg-thumbnail.min";
+import "../../../node_modules/swiper/swiper-bundle.min";
+import "../../../node_modules/gsap/dist/gsap.min"

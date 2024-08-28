@@ -1,0 +1,144 @@
+.decor {
+  --dot-size: 70px;
+  --dot-inner-size: 4px;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  transform: rotate(90deg);
+  @include media-breakpoint-down(xl) {
+    --dot-size: 50px;
+    --dot-inner-size: 4px;
+  }
+  @include media-breakpoint-down(lg) {
+    --dot-size: 40px;
+    --dot-inner-size: 2.4px;
+  }
+  @include media-breakpoint-down(md) {
+    --dot-size: 18px;
+    --dot-inner-size: 1.5px;
+  }
+  @include media-breakpoint-down(435) {
+    --dot-size: 16px;
+    --dot-inner-size: 1px;
+  }
+  @include media-breakpoint-down(420) {
+    --dot-size: 16px;
+    --dot-inner-size: .8px;
+  }
+  .dot {
+    opacity: 0;
+    transition: all 1s;
+    width: var(--dot-size);
+    height: var(--dot-size);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.show {
+      opacity: 1;
+    }
+    &__inner {
+      transition: all .2s;
+      width: var(--dot-inner-size);
+      height: var(--dot-inner-size);
+      border-radius: 50%;
+      background-color: #fff;
+      transition: all .55s ease;
+      &.medium {
+        width: calc(var(--dot-inner-size) * 4);
+        height: calc(var(--dot-inner-size) * 4);
+      }
+      &.large {
+        width: calc(var(--dot-inner-size) * 8);
+        height: calc(var(--dot-inner-size) * 8);
+      }
+    }
+  }
+  .plus {
+    top: 46%;
+    left: 35%;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    z-index: -1;
+    background-image: url('../img/become-engineering/plus.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include media-breakpoint-down(lg) {
+      width: 20px;
+      height: 20px;
+      top: 46%;
+      left: 35%;
+    }
+    @include media-breakpoint-down(md) {
+      width: 10px;
+      height: 10px;
+    }
+    @include media-breakpoint-down(400) {
+      width: 10px;
+      height: 10px;
+      top: 46%;
+      left: 45%;
+    }
+    @include media-breakpoint-down(350) {
+      width: 10px;
+      height: 10px;
+      top: 46%;
+      left: 50%;
+    }
+  }
+}
+.decor-position{
+  position: absolute;
+  top: -4rem;
+  right: 3.5rem;
+  @include media-breakpoint-up(350) {
+    top: -4rem;
+    right: 2rem;
+  }
+  @include media-breakpoint-up(370) {
+    top: -4rem;
+    right: 3.5rem;
+  }
+  @include media-breakpoint-up(400) {
+    top: -3rem;
+    right: 3rem;
+  }
+  @include media-breakpoint-up(435) {
+    top: -3.5rem;
+    right: 4.5rem;
+  }
+  @include media-breakpoint-up(sm) {
+    top: -2rem;
+    right: 3rem;
+  }
+  @include media-breakpoint-up(480) {
+    top: -2rem;
+    right: 4rem;
+  }
+  @include media-breakpoint-up(500) {
+    top: -2rem;
+    right: 5rem;
+  }
+  @include media-breakpoint-up(530) {
+    top: -1rem;
+    right: 2.5rem;
+  }
+  @include media-breakpoint-up(md) {
+    top: -6rem;
+    right: 6.8rem;
+  }
+  @include media-breakpoint-up(lg) {
+    top: -4rem;
+    right: 6.8rem;
+  }
+  @include media-breakpoint-up(xl) {
+    top: -8rem;
+    right: 10rem;
+  }
+  @include media-breakpoint-up(xxl) {
+    top: -6rem;
+    right: 8rem;
+  }
+}

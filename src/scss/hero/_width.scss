@@ -1,0 +1,41 @@
+.hero-w-x {
+  width: 5rem !important;
+  @include media-breakpoint-up(lg) {
+    width: 1.4rem !important;
+  }
+}
+
+.hero-w-content {
+  width: 85% !important;
+  @include media-breakpoint-up(lg) {
+    width: 92.5% !important;
+  }
+}
+
+.hero-w-title{
+  width: 100% !important;
+  @include media-breakpoint-up(lg) {
+    width: 40% !important;
+  }
+}
+
+.hero-w-btn {
+  width: 100% !important;
+  @include media-breakpoint-up(lg) {
+    width: 50% !important;
+  }
+}
+
+.hero-w-logo-mai {
+  width: 5.5rem !important;
+  @include media-breakpoint-up(lg) {
+    width: 4rem !important;
+  }
+}
+
+.hero-w-logo-roscosmos{
+  width: 5rem !important;
+  @include media-breakpoint-up(lg) {
+    width: 6rem !important;
+  }
+}

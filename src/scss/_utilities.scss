@@ -1,0 +1,54 @@
+//
+// Utilities
+// Extends default Bootstrap utility classes
+// Classes with a purpose to reduce the frequency of
+// highly repetitive declarations
+// --------------------------------------------------
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+:root {
+  --lh-1: .9;
+  --lh-3: 1;
+  --lh-4: 1.25;
+  @include media-breakpoint-up(lg) {
+    --lh-1: .85;
+    --lh-3: .95;
+    --lh-4: 1.25;
+  }
+}
+
+$utilities: map-merge(
+  $utilities,
+  (
+    // Position
+    'position': (
+      property: position,
+      responsive: true,
+      values: static relative absolute fixed sticky
+    ),
+
+    // Z-index
+    'z-index': (
+      property: z-index,
+      class: zindex,
+      values: 1 2 3 4 5
+    ),
+
+    // Font height
+    "line-height": (
+      property: line-height,
+      class: lh,
+      values: (
+        1 : var(--lh-1),
+        3 : var(--lh-3),
+        4 : var(--lh-4),
+      )
+    ),
+  )
+);

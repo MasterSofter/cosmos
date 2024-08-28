@@ -1,0 +1,589 @@
+.rounded-hero {
+  border-radius: 2rem;
+  @include media-breakpoint-up(lg) {
+    border-radius: 5rem;
+  }
+}
+
+.rounded-accordion {
+  border-radius: 2rem !important;
+  @include media-breakpoint-up(lg) {
+    border-radius: 3rem !important;
+  }
+}
+
+.border-adaptative {
+  border-width: .15rem !important;
+}
+
+.mt-n-border {
+  margin-top: -.14rem !important;
+}
+
+.hover-effect-up {
+  transition: transform .5s;
+  &:hover {
+    transform: translateY(-.25rem);
+  }
+}
+
+.w-nav-bar{
+  @include media-breakpoint-up(lg) {
+    width: 70% !important;
+  }
+}
+
+.w-nav-swiper{
+  width: 100%;
+  @include media-breakpoint-up(lg) {
+    min-width: 59rem;
+    max-width: 59rem;
+  }
+}
+
+.w-nav-btn {
+  width: 100%;
+  @include media-breakpoint-up(lg) {
+    min-width: 9rem;
+    max-width: 9rem;
+  }
+}
+
+.w-asterisk{
+  width: 2rem;
+}
+
+.w-accordion-swiper{
+  width: 38.5rem;
+  @include media-breakpoint-up(lg) {
+    width: 65.5rem;
+  }
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.w-x{
+  width: 5rem;
+  @include media-breakpoint-up(lg) {
+    width: 1.4rem;
+  }
+}
+
+.w-logo-mai {
+  width: 5rem;
+  @include media-breakpoint-up(lg) {
+    width: 5rem;
+  }
+}
+
+.w-logo-roscosmos{
+  width: 5rem;
+  @include media-breakpoint-up(lg) {
+    width: 8rem;
+  }
+}
+
+.hero-transforms {
+  width: 100%;
+  @include media-breakpoint-up(lg) {
+    top: 2.5rem;
+    width: 92.5%;
+  }
+}
+
+.hero-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.h-navbar {
+  height: 12rem;
+  @include media-breakpoint-up(lg) {
+    height: 5rem;
+  }
+}
+
+.h-card {
+  height: 25rem;
+  @include media-breakpoint-up(lg) {
+    height: 18rem;
+  }
+}
+
+.h-hero-section {
+  height: auto;
+  @include media-breakpoint-up(lg) {
+    height: 55.5rem;
+  }
+}
+
+.hero-ellipse {
+  position: absolute;
+  background-image: url("../img/pish/ellipse.svg");
+  background-repeat: no-repeat;
+  background-position: 3rem 40rem;
+  background-size: 91.5%;
+  width: 100%;
+  height: 65rem;
+  @include media-breakpoint-up(lg) {
+    background-position: 26.5rem 4rem;
+    background-size: 48%;
+  }
+}
+
+.hero-line {
+  position: absolute;
+  background-image: url("../img/pish/line.svg");
+  background-repeat: no-repeat;
+  background-position: 22rem 56rem;
+  background-size: 3%;
+  width: 100%;
+  height: 65rem;
+  @include media-breakpoint-up(lg) {
+    height: 55.5rem;
+    background-position: 49.5rem 48.5rem;
+    background-size: 1%;
+  }
+}
+
+.top-logo-mai {
+  top: 2rem;
+  @include media-breakpoint-up(lg) {
+    top: 1.5rem;
+  }
+}
+
+.top-title {
+  top: 11rem;
+  @include media-breakpoint-up(lg) {
+    top: 9.5rem;
+  }
+}
+
+.top-subtitle {
+  top: 11rem;
+  @include media-breakpoint-up(lg) {
+    top: 10.65rem;
+  }
+}
+
+.fw-2024 {
+  font-weight: 100;
+  @include media-breakpoint-up(lg) {
+    margin-top: 2.5rem;
+    margin-left: 31.5rem;
+    font-weight: 100;
+  }
+}
+
+.margins-2024 {
+  margin-top: 0;
+  @include media-breakpoint-up(lg) {
+    margin-top: 2.5rem;
+    margin-right: 28rem;
+    margin-left: 0;
+  }
+}
+
+.margins-hero-subtitle-1 {
+  margin-top: 1.75rem;
+}
+
+.margins-hero-subtitle-2 {
+  margin-top: 31rem;
+  @include media-breakpoint-up(lg) {
+    margin-top: 19.5rem;
+  }
+}
+
+.fs-accordion-btn {
+  font-size: 4.5rem;
+  line-height: 3.5rem;
+  @include media-breakpoint-up(lg) {
+    font-size: 5rem;
+    line-height: 4.8rem;
+  }
+}
+
+.fs-page-loading {
+  font-size: 1.5rem !important;
+  @include media-breakpoint-up(md) {
+    font-size: .75rem !important;
+  }
+}
+
+.fs-variant-1 {
+  font-size: 6.65rem;
+  line-height: .8;
+  @include media-breakpoint-up(lg) {
+    font-size: 7.3rem;
+    line-height: .85;
+  }
+}
+
+.fs-variant-7 {
+  font-size: 1.85rem;
+  line-height: 1.8rem;
+  @include media-breakpoint-up(lg) {
+    font-size: 3.5rem;
+    line-height: 3rem;
+  }
+}
+
+.fs-section-03 {
+  font-size: 1.85rem;
+  line-height: 1.8rem;
+  @include media-breakpoint-up(lg) {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
+
+
+.fs-variant-2 {
+  font-size: 5rem;
+  line-height: .8;
+  @include media-breakpoint-up(lg) {
+    font-size: 3.1rem;
+    line-height: 2.5rem;
+  }
+}
+
+.fs-variant-3 {
+  font-size: 2.42rem;
+  line-height: 2.3rem;
+  @include media-breakpoint-up(lg) {
+    font-size: 2.45rem;
+    line-height: 2.4rem;
+  }
+}
+
+.fs-hero-subtitle-2{
+  font-size: 1.85rem;
+  line-height: .85;
+  @include media-breakpoint-up(lg) {
+    font-size: 2.45rem;
+    line-height: .95;
+  }
+}
+
+.fs-variant-4 {
+  font-size: 1.6rem;
+  @include media-breakpoint-up(lg) {
+    font-size: 1.55rem;
+  }
+}
+
+.fs-hero-btn{
+  font-size: 2.8rem;
+  @include media-breakpoint-up(lg) {
+    font-size: 1.55rem;
+  }
+}
+
+.fs-variant-5 {
+  font-size: 1.7rem;
+  line-height: 1.25;
+  @include media-breakpoint-up(lg) {
+    font-size: 1.55rem;
+    line-height: 1.25;
+  }
+}
+
+.fs-variant-8 {
+  font-size: 1.7rem;
+  line-height: .8;
+  @include media-breakpoint-up(lg) {
+    font-size: 1.6rem;
+  }
+}
+
+.fs-variant-9 {
+  font-size: 1.2rem;
+  line-height: 1;
+  @include media-breakpoint-up(lg) {
+    font-size: 1.05rem;
+  }
+}
+
+.fs-nav-menu-text{
+  font-size: 1.85rem;
+  line-height: 1.2;
+  @include media-breakpoint-up(lg) {
+    font-size: 1rem;
+    line-height: .8;
+  }
+}
+
+.fs-variant-6 {
+  font-size: 1.2rem;
+  line-height: 1.1;
+  @include media-breakpoint-up(lg) {
+    font-size: 1.05rem;
+    line-height: 1;
+  }
+}
+
+.fs-card-icon{
+  font-size: 3.5rem;
+  @include media-breakpoint-up(lg) {
+    font-size: 2.8rem;
+  }
+}
+
+.fs-accordion-text-body {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  @include media-breakpoint-up(lg) {
+    font-size: 1.4rem;
+    line-height: 1.2;
+  }
+}
+
+.fs-accordion-text-body-number{
+  font-size: 2rem;
+  line-height: 1.2;
+  @include media-breakpoint-up(lg) {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+}
+
+.card-text-fs{
+  font-size: 1.8rem;
+  @include media-breakpoint-up(lg) {
+    font-size: 1.25rem;
+  }
+}
+
+.text-linear-gradient {
+  //background: linear-gradient(#0271FF, #00F78B);
+  background: linear-gradient(#0262e4, #7359ff);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.bg-gradient-primary {
+  background: linear-gradient(180deg, #0262e4 0%, #7055ff 80%, #7359ff 100%) !important
+  //background: linear-gradient(180deg, #0262e4 15%, #7359ff 100%) !important
+}
+
+.bg-dark-btn-color {
+  background-color: #5e47dd !important;
+}
+
+.card-btn-custom{
+  &:hover{
+    background-color: #7359ff !important;
+  }
+}
+
+.bg-section {
+  &-hero {
+    background: radial-gradient(circle, rgba(2, 69, 255, 0.7) 5%, rgba(245, 245, 245, 0) 25%) no-repeat center -20rem;
+    background-size: 30rem 100%;
+    @include media-breakpoint-up(sm) {
+      background: radial-gradient(circle, rgba(2, 69, 255, 0.7) 5%, rgba(245, 245, 245, 0) 25%) no-repeat center -28rem;
+      background-size: 50rem 100%;
+    }
+    @include media-breakpoint-up(md) {
+      background: radial-gradient(circle, rgba(2, 69, 255, 0.7) 5%, rgba(245, 245, 245, 0) 25%) no-repeat center -30rem;
+      background-size: 140rem 100%;
+    }
+    @include media-breakpoint-up(lg) {
+      background: radial-gradient(circle, rgba(2, 69, 255, 0.7) 5%, rgba(245, 245, 245, 0) 25%) no-repeat center -30rem;
+      background-size: 200rem 100%;
+    }
+    @include media-breakpoint-up(xl) {
+      background: radial-gradient(circle, rgba(2, 69, 255, 0.7) 5%, rgba(245, 245, 245, 0) 25%) no-repeat center -35rem;
+      background-size: 240rem 100%;
+    }
+    @include media-breakpoint-up(xxl) {
+      background: radial-gradient(circle, rgba(2, 69, 255, 0.7) 5%, rgba(245, 245, 245, 0) 25%) no-repeat center -35rem;
+      background-size: 300rem 100%;
+    }
+  }
+  &-galaxy {
+    background-image: url('../img/become-engineering/galaxy.png');
+    background-repeat: no-repeat;
+    background-position: center 40%;
+    background-size: 75%;
+    @include media-breakpoint-down(xxl) { background-size: 90%; background-position-y: 80% }
+    @include media-breakpoint-down(xl)  { background-size: 110%; background-position-y: 75%;}
+    @include media-breakpoint-down(lg)  { background-size: 140%; background-position-y: 60%}
+    @include media-breakpoint-down(md)  { background-size: 140%; background-position-y: 60% }
+    @include media-breakpoint-down(sm)  { background-size: 200%; background-position-y: 70% }
+  }
+  &-infinity::after {
+    background-image: url('../img/custom_img/infinity_bg.png');
+    content: "";
+    width: 40%;
+    height: 100%;
+    left: 0px;
+    top: 5%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+  }
+  &-play:after {
+    content: "\f144";
+    font-family: "Font Awesome 6 Pro";
+    font-weight: 300;
+    font-size: 30vw;
+    color: #fff;
+    line-height: 1;
+    opacity: .1;
+    position: absolute;
+    background-repeat: no-repeat;
+    left: -5vw;
+    top: calc(-15vw + 50%);
+    animation: pulse 4s ease-in-out infinite;
+  }
+  &-aperture:after {
+    content: "\e2dc";
+    font-family: "Font Awesome 6 Pro";
+    font-weight: 300;
+    font-size: 20vw;
+    color: #fff;
+    line-height: 1;
+    opacity: .1;
+    position: absolute;
+    background-repeat: no-repeat;
+    right: -5vw;
+    top: calc(-8vw + 50%);
+    animation: pulse 4s ease-in-out infinite;
+    // @include media-breakpoint-down(lg) {
+    //   top: -10vw;
+    // }
+  }
+  &-footer {
+    @include media-breakpoint-down(lg) {
+      width: 120%;
+    }
+  }
+}
+
+.cursor-pointer:hover {
+  cursor: pointer;
+}
+
+.cursor-grabbing:hover {
+  cursor: grabbing;
+}
+
+.filter-grayscale {
+  filter: grayscale(100%)  brightness(400%);;
+  opacity: 100%;
+}
+
+// Свайпер с бесонечной прокруткой
+.swiper-infinity {
+  &-main .swiper-slide {
+    cursor: pointer;
+    width: auto;
+    font-size: 1.3rem;
+    color: #474747;
+    &-active {
+      color: #fff;
+    }
+  }
+  &-sub .swiper-slide {
+    width: auto;
+    .step-infinity {
+      position: relative;
+      display: flex;
+      // padding-left: 2.5rem;
+      &::after {
+        content: "";
+        width: 100px;
+        height: 1px;
+        background: #fff;
+        top: 30px;
+        left: 100%;
+        position: absolute;
+      }
+    }
+    // &:first-child {
+    //   .step-infinity {
+    //     padding-left: 0;
+    //   }
+    // }
+    @include media-breakpoint-down(sm) {
+      .content {
+        max-width: 90vw;
+      }
+    }
+    .title {
+      position: relative;
+      z-index: 2;
+      font-size: 2.3rem;
+      color: #fff;
+      padding-left: 22px;
+      font-family: 'Oswald';
+      font-weight: 300;
+      margin-right: 2.5rem;
+      @include media-breakpoint-down(sm) {
+        max-width: 90vw;
+        font-size: 1.8rem;
+        padding-top: .5rem;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0px;
+        top: 2px;
+        width: 3rem;
+        height: 3rem;
+        background-color: $primary;
+        z-index: -1;
+        @include media-breakpoint-up(lg) {
+          width: 3.2rem;
+          height: 3.2rem;
+        }
+      }
+    }
+  }
+  &-sub .swiper-slide:last-child {
+    .step-infinity::after {
+      content: none;
+    }
+  }
+}
+
+.tg-btn-root {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  width: 9rem;
+  height: 9rem;
+}
+
+.tg-btn-text {
+  width: 100%;
+  position: absolute;
+  animation: tg-btn-rotating-360 15s infinite linear;
+}
+
+@keyframes tg-btn-rotating-360 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.tg-btn-video {
+  width: 6rem;
+  height: 6rem;
+}
+
+.navbar-sticky.navbar-stuck {
+  top: 0;
+}
+
