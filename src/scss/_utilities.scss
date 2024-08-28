@@ -14,12 +14,16 @@
 
 :root {
   --lh-1: .9;
+  --lh-2: 1;
   --lh-3: 1;
   --lh-4: 1.25;
+  --lh-5: 1;
   @include media-breakpoint-up(lg) {
     --lh-1: .85;
+    --lh-2: .85;
     --lh-3: .95;
     --lh-4: 1.25;
+    --lh-5: 1.05;
   }
 }
 
@@ -46,8 +50,10 @@ $utilities: map-merge(
       class: lh,
       values: (
         1 : var(--lh-1),
+        2 : var(--lh-2),
         3 : var(--lh-3),
         4 : var(--lh-4),
+        5 : var(--lh-5)
       )
     ),
   )

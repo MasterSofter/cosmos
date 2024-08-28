@@ -249,23 +249,27 @@ $h6-font-size:                              $font-size-base !default;
 
 :root {
   --text-1 : 5.5rem;
+  --text-2 : 1.85rem;
   --text-3 : 2.2rem;
-  --text-4 : 1.4rem;
+  --text-4 : 1.65rem;
+  --text-5 : 1.2rem;
   --text-hero-btn : 2.55rem;
   @include media-breakpoint-up(lg) {
     --text-1 : 7.3rem;
+    --text-2 : 3.5rem;
     --text-3 : 2.45rem;
-    --text-4 : 1.55rem;
+    --text-4 : 1.7rem;
+    --text-5 : 1.05rem;
     --text-hero-btn : 1.55rem;
   }
 }
 
 $font-sizes: (
   "text-1": var(--text-1),
-  // 2:                                        ,
+  "text-2": var(--text-2),
   "text-3": var(--text-3),
   "text-4": var(--text-4),
-  //5:                                        ,
+  "text-5": var(--text-5),
   //6:                                        ,
   "hero-btn": var(--text-hero-btn),
   'xl':                                     $font-size-xl,
