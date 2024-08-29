@@ -115,41 +115,45 @@ new Swiper('#swiper-nav-menu',{
   allowTouchMove: true,
   breakpoints: {
     768: {
-      spaceBetween: 42,
+      spaceBetween: 50,
       slidesPerView: 'auto',
       allowTouchMove: true
     },
     992: {
-      spaceBetween: 15,
+      spaceBetween: 60,
       slidesPerView: 'auto',
       allowTouchMove: false
     },
     1100: {
-      spaceBetween: 18,
+      spaceBetween: 70,
       slidesPerView: 'auto',
     },
     1300: {
-      spaceBetween: 20,
+      spaceBetween: 85,
       slidesPerView: 'auto',
     },
     1600: {
-      spaceBetween: 24,
+      spaceBetween: 110,
       slidesPerView: 'auto',
     },
     1800: {
-      spaceBetween: 28,
+      spaceBetween: 120,
       slidesPerView: 'auto',
     },
     2100: {
-      spaceBetween: 32,
+      spaceBetween: 140,
       slidesPerView: 'auto',
     },
     2500: {
-      spaceBetween: 38,
+      spaceBetween: 180,
       slidesPerView: 'auto',
     },
     3000: {
-      spaceBetween: 40,
+      spaceBetween: 200,
+      slidesPerView: 'auto',
+    },
+    3400: {
+      spaceBetween: 230,
       slidesPerView: 'auto',
     },
   },

@@ -487,3 +487,12 @@ html {
     border: solid #fff 1px;
   }
 }
+
+.bg-waves {
+  background-position: 0 0;
+  background-image: url("../img/cosmos/waves.svg");
+  background-size: cover;
+  @include media-breakpoint-up(lg) {
+    background-position: 0 -4rem;
+  }
+}
