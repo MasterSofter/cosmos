@@ -110,7 +110,7 @@ new Swiper('#swiper-career', baseSwiper('#swiper-career'));
 new Swiper('#swiper-nav-menu',{
   speed: 600,
   slidesPerView: 'auto',
-  spaceBetween: 28,
+  spaceBetween: 30,
   loop: false,
   allowTouchMove: true,
   breakpoints: {
@@ -120,40 +120,52 @@ new Swiper('#swiper-nav-menu',{
       allowTouchMove: true
     },
     992: {
-      spaceBetween: 60,
+      spaceBetween: 40,
       slidesPerView: 'auto',
       allowTouchMove: false
     },
     1100: {
-      spaceBetween: 70,
+      spaceBetween: 50,
       slidesPerView: 'auto',
     },
     1300: {
-      spaceBetween: 85,
+      spaceBetween: 65,
       slidesPerView: 'auto',
     },
     1600: {
-      spaceBetween: 110,
+      spaceBetween: 80,
       slidesPerView: 'auto',
     },
     1800: {
-      spaceBetween: 120,
+      spaceBetween: 90,
       slidesPerView: 'auto',
     },
     2100: {
-      spaceBetween: 140,
+      spaceBetween: 110,
       slidesPerView: 'auto',
     },
     2500: {
-      spaceBetween: 180,
+      spaceBetween: 130,
       slidesPerView: 'auto',
     },
     3000: {
-      spaceBetween: 200,
+      spaceBetween: 150,
       slidesPerView: 'auto',
     },
     3400: {
-      spaceBetween: 230,
+      spaceBetween: 170,
+      slidesPerView: 'auto',
+    },
+    3800: {
+      spaceBetween: 190,
+      slidesPerView: 'auto',
+    },
+    4400: {
+      spaceBetween: 220,
+      slidesPerView: 'auto',
+    },
+    4800: {
+      spaceBetween: 240,
       slidesPerView: 'auto',
     },
   },

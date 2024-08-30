@@ -16,6 +16,13 @@
   border-width: .15rem !important;
 }
 
+.border-adaptative-btn {
+  border-width: .15rem !important;
+  @include media-breakpoint-up(lg) {
+    border-width: .155rem !important;
+  }
+}
+
 .mt-n-border {
   margin-top: -.1rem !important;
 }

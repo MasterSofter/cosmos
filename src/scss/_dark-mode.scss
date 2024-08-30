@@ -11,7 +11,7 @@
     --#{$prefix}gray-900: #{$white};
     --#{$prefix}body-bg: #{$body-dark-mode-bg};
     --#{$prefix}body-color: #{$body-dark-mode-color};
-    --#{$prefix}secondary-bg: rgba(#{to-rgb($white)}, .04);
+    --#{$prefix}secondary-bg: #212121;
     --#{$prefix}heading-link-color: #{$nav-link-dark-mode-color};
     --#{$prefix}heading-link-hover-color: #{$nav-link-dark-mode-hover-color};
     --#{$prefix}nav-link-color: #{$nav-link-dark-mode-color};

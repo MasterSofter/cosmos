@@ -490,12 +490,12 @@ html {
 }
 
 .bg-waves {
-  background-position: center -5rem;
+  background-position: center -4rem;
   background-image: url("../img/cosmos/waves.svg");
-  background-size: 300% auto;
+  background-size: 260% auto;
   background-repeat: no-repeat;
   @include media-breakpoint-up(lg) {
-    background-position: center -4rem;
+    background-position: center -2.5rem;
     background-size: contain;
   }
 }
@@ -520,4 +520,8 @@ html {
     background-position: center top;
     background-size: contain;
   }
+}
+
+.border-light {
+  border-color: #999 !important;
 }
