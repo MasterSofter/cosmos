@@ -38957,7 +38957,7 @@ img-comparison-slider:focus {
   height: 25px;
   position: absolute;
   z-index: -1;
-  background-image: url("../img/become-engineering/plus.svg");
+  background-image: url("../img/cosmos/plus.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -40490,7 +40490,7 @@ font.errortext {
 
 .hero-line {
   position: absolute;
-  background-image: url("../img/pish/line.svg");
+  background-image: url("../img/cosmos/line.svg");
   background-repeat: no-repeat;
   background-position: 22rem 56rem;
   background-size: 3%;

@@ -477,6 +477,7 @@ html {
 .rounded-bottom-left{
   border-bottom-left-radius: 1rem;
 }
+
 .rounded-bottom-right{
   border-bottom-right-radius: 1rem;
 }
@@ -489,10 +490,34 @@ html {
 }
 
 .bg-waves {
-  background-position: 0 0;
+  background-position: center -5rem;
   background-image: url("../img/cosmos/waves.svg");
-  background-size: cover;
+  background-size: 300% auto;
+  background-repeat: no-repeat;
   @include media-breakpoint-up(lg) {
-    background-position: 0 -4rem;
+    background-position: center -4rem;
+    background-size: contain;
+  }
+}
+
+.bg-section_02 {
+  background-position: center 40rem;
+  background-image: url("../img/cosmos/bg-section_02.svg");
+  background-size: 280% auto;
+  background-repeat: no-repeat;
+  @include media-breakpoint-up(lg) {
+    background-position: center top;
+    background-size: contain;
+  }
+}
+
+.bg-section_04 {
+  background-position: center top;
+  background-image: url("../img/cosmos/bg-section_04.svg");
+  background-size: 320% auto;
+  background-repeat: no-repeat;
+  @include media-breakpoint-up(lg) {
+    background-position: center top;
+    background-size: contain;
   }
 }
