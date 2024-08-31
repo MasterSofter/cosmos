@@ -39820,7 +39820,7 @@ font.errortext {
 }
 
 .hero-w-x {
-  width: 5rem !important;
+  width: 2rem !important;
 }
 @media (min-width: 992px) {
   .hero-w-x {
@@ -39865,7 +39865,7 @@ font.errortext {
 }
 
 .hero-w-logo-roscosmos {
-  width: 5rem !important;
+  width: 8.5rem !important;
 }
 @media (min-width: 992px) {
   .hero-w-logo-roscosmos {
