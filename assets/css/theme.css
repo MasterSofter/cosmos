@@ -39824,7 +39824,7 @@ font.errortext {
 }
 @media (min-width: 992px) {
   .hero-w-x {
-    width: 1.4rem !important;
+    width: 1.2rem !important;
   }
 }
 
@@ -39860,6 +39860,15 @@ font.errortext {
 }
 @media (min-width: 992px) {
   .hero-w-logo-mai {
+    width: 4rem !important;
+  }
+}
+
+.hero-w-logo-cosmos {
+  width: 5.5rem !important;
+}
+@media (min-width: 992px) {
+  .hero-w-logo-cosmos {
     width: 4rem !important;
   }
 }

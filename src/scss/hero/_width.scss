@@ -1,7 +1,7 @@
 .hero-w-x {
   width: 2rem !important;
   @include media-breakpoint-up(lg) {
-    width: 1.4rem !important;
+    width: 1.2rem !important;
   }
 }
 
@@ -27,6 +27,13 @@
 }
 
 .hero-w-logo-mai {
+  width: 5.5rem !important;
+  @include media-breakpoint-up(lg) {
+    width: 4rem !important;
+  }
+}
+
+.hero-w-logo-cosmos {
   width: 5.5rem !important;
   @include media-breakpoint-up(lg) {
     width: 4rem !important;
